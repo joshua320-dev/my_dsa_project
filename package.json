@@ -1,0 +1,8 @@
+{
+  "name": "my_dsa_project",
+  "version": "1.0.0",
+  "scripts": {
+    "demo": "node src/demo.js",
+    "benchmark": "node src/benchmark.js"
+  }
+}
