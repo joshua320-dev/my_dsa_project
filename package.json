@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "scripts": {
     "demo": "node src/demo.js",
-    "benchmark": "node src/benchmark.js"
+    "benchmark": "node src/benchmark.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^30.5.2"
   }
 }

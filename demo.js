@@ -52,3 +52,30 @@ const found =
   );
 
 console.log(found);
+
+const mergeSort = require("./MergeSort");
+
+const sortedByPrice = mergeSort(
+  events,
+  (a, b) => a.price - b.price
+);
+
+const sortedByDate = mergeSort(
+  events,
+  (a, b) => new Date(a.date) - new Date(b.date)
+);
+
+const sortedByAvailability = mergeSort(
+  events,
+  (a, b) =>
+    (a.capacity - a.bookedSeats) -
+    (b.capacity - b.bookedSeats)
+);
+console.log("\nSorted by Price:");
+console.log(sortedByPrice);
+
+console.log("\nSorted by Date:");
+console.log(sortedByDate);
+
+console.log("\nSorted by Availability:");
+console.log(sortedByAvailability);
