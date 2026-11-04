@@ -1,0 +1,10 @@
+PENDING
+ |
+ v
+PAID
+ |
+ v
+CHECKED_IN
+
+PENDING ----> CANCELLED
+PAID -------> CANCELLED
